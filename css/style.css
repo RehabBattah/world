@@ -7,7 +7,6 @@
     font-family: "Roboto Slab", serif;
 }
 img{
-    display: inline-block;
     width: 100%;
 }
 /* text settings */
@@ -17,19 +16,25 @@ img{
 .text-blue{color: blue;}
 .text-black{color: black;}
 .white-bg{background-color: white;}
-
 /* box stylen */
 .my{margin: 5% 0;}
 .mx{margin: 0 1.5%;}
+.ml{margin-left: 25px;}
 .m2{margin: 2% 0;}
+.mr{margin-right: 25px;}
 .p-5{padding: 5px;}
+.p-30{padding: 30px;}
 .fs-12{ font-size: 12px;}
+.fs-14{ font-size: 14px;}
 .w-100{width: 100%;}
+.w-75{width: 75%;}
 .w-50{width: 50%;}
 .w-25{width: 25%;}
 /* display settings */
 .inline-block{ display: inline-block;}
-
+.d-flex{display: flex;}
+.justify-btw{justify-content: space-between;}
+.relative{position: relative;}
 /* main sizing */
 .container{
     margin:1% auto;
@@ -40,8 +45,7 @@ img{
 .col-3{ width: 25%;}
 .col-5{ width:40%;}
 .col-6{ width: 48%;}
-.col-8{width:60%;}
-
+.col-8{width:67%;}
 
 ul li , a{
     list-style-type: none;
@@ -53,13 +57,11 @@ nav{
     max-height: 5rem;
     padding: 12px 0;
 }
-
 #Home nav li {
     display: inline-block;
     font-size: 17px;
     padding:  15px; 
 } 
-
 .nav-pages, .miss-pages {
     float: right;
     width: 50%;
@@ -79,13 +81,6 @@ nav ul li i{
     margin-left: 10px;
     font-size: 22px;
 }
-/* .line{
-    height: 1px;
-    background-color: white;
-    border-bottom: 2px white solid;
-    margin-top: 5rem;
-} */
-
 
 /* HOME CONTENT*/
 #Home{
@@ -114,78 +109,66 @@ nav ul li i{
     padding: 12px 50px;
     margin-top: 400px;
 }
-
 /* CARD MISS  */       /* TREND */
-.card-miss, .trend ,.trend-2 ,.miss-nav{
-    margin: auto;
+.card-miss, .trend ,.trend-2 {
     padding: 20px;
+}
+.miss-nav{
+    width: 60%;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 2%;
 }
 .card-miss .miss-nav a ,.trend .miss-nav a {
     font-size: 15px;
-    padding:  15px; 
+    padding: 10px ;   
 } 
-.miss-nav h3{margin-right: 5%;}
 .miss-1{
-    box-shadow: 0 2px 2px  lightgrey, 
-    0 2px 5px  lightgrey;
-    margin-left: 25px;
-    height: 12rem;
+    box-shadow: 0 2px 2px  lightgrey;
 }
 .miss-1-img img{
-    background-color: blue;
     overflow: hidden;
 }
 .miss-1-content{
     padding: 25px; 
     line-height: 23px;
 }
+.card-hor{
+    height: 24%;
+    box-shadow: 0 2px 2px  lightgrey;
+    margin-bottom:1.2%;
+}
+.card-hor-img, .card-ass-img{width: 30%;}
+.card-hor-img img ,.card-ass-img img{height: 100%; } 
+.card-hor-text, .card-ass-text{
+    width: 70%; 
+    align-self: center; 
+    padding-left: 1%;
+}
+/* .big-container{
+    width: 60%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: bisque;
+} */
 
-/* .card-hr{background-color: bisque;} */
-
-.card-hr{
-    height: 12rem;
+/* ASIDE  */
+aside{
+    box-shadow: 0 2px 2px  lightgrey;
+    /* 0 2px 5px  lightgrey; */
 }
-.card-hr-1{
-    height: 3rem;
-    border: 1px black solid;
+.brdr-lb{
+    border-left: 1px gainsboro solid;
+    border-bottom: 1px gainsboro solid;
+    border-top: none;
+    border-right: none;
+    padding:25px;
 }
-
-.miss-2 img{
-    background-color: blueviolet;
-    /* float: left; */
-}
-.miss-2-content {
-    background-color: blue;
-    /* float: right; */
-    /* padding: 10px; */
-}
-.miss-2 .row{
-    border: 1px solid  white;
-    padding: 15px;
-    float: left;
-}
-/* .trend{background-color: bisque;} */
-
 .trend-1 , asside{
     margin-left: 10px;
     box-shadow: 0 2px 2px  lightgrey, 
         0 2px 5px  lightgrey;
 }
-/* .trend-2{background-color: brown;} */
-
-/* ASIDE  */
-aside{
-    /* background-color: brown; */
-    padding: 10px 25px;
-    margin-left: 25px;
-}
-aside table{
-    border-left: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-top: none;
-    border-right: none;
-}
-
 /* CARDS  */
 .card{
     border: 1px solid ;
@@ -210,6 +193,36 @@ aside table{
     display: inline-block;
 }
 .card .layer span{background-color: white; padding: 3px 12px;}
+/* SECTION4  */
+.sec4 button{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 6px 16px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.vid{position: relative;}
+.vid-icon{
+    position: absolute;
+    top: 55%;
+    left: 48%;
+    color: gray;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.travel{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    background-color: white;
+    padding: 5px 15px;
+    /* font-size: 12px; */
+}
 /* footer */
 footer{
     height: 8rem;
@@ -237,3 +250,8 @@ footer input{
     background-color: transparent;
 }
 /* footer .row .col-4 h5{padding-top: 45px;} */
+
+/*.hr{
+    border: 1px gainsboro solid;
+    margin: 0 0 10px;
+} */
